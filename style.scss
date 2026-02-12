@@ -1,0 +1,64 @@
+$text-color: #333;
+$text-light: #777;
+$btn-color: #007bff;
+$btn-hover: #0056b3;
+$bg-color: #f9f9f9;
+
+@mixin card-style {
+    border: 1px solid #ccc;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #e5e5e5;
+    margin: 0;
+}
+
+.product-card {
+    background-color: $bg-color;
+    width: 300px;
+    
+    @include card-style;
+
+    &__image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    &__info {
+        padding: 15px;
+    }
+
+    &__title {
+        margin: 0 0 10px;
+        color: $text-color;
+        font-size: 1.2rem;
+    }
+
+    &__desc {
+        color: $text-light;
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    &__btn {
+        background-color: $btn-color;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        width: 100%;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+
+        &:hover {
+            background-color: $btn-hover;
+        }
+    }
+}
