@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#2f6fed" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Заметки" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="icon" href="/icons/icon-64.png" type="image/png" sizes="64x64" />
+    <title>Практика 15</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <h1>Заметки</h1>
+        <nav class="tabs">
+          <button id="home-btn" class="tab active" type="button">Главная</button>
+          <button id="about-btn" class="tab" type="button">О нас</button>
+        </nav>
+        <div id="status" class="status"></div>
+        <section id="app-content"></section>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
