@@ -20,6 +20,10 @@
 - `pr14` - список дел с `Web App Manifest`
 - `pr15` - заметки с `HTTPS` и `App Shell`
 - `pr16` - заметки с `WebSocket` и `Push`
+- `pr17` - заметки с напоминаниями и откладыванием `Push`
+- `pr18` - подготовка к контрольной работе №3
+- `pr19` - API пользователей с PostgreSQL
+- `pr20` - API пользователей с MongoDB
 
 ## Запуск `pr9`
 
@@ -138,3 +142,41 @@ npm start
 ```
 
 Адрес клиента: `http://localhost:3001`
+
+## Запуск `pr17`
+
+```bash
+cd pr17/client
+npm install
+npm start
+```
+
+Адрес клиента: `http://localhost:3001`
+
+## Практика `pr18`
+
+Описание контрольной работы №3 находится в `pr18/README.md`.
+
+## Запуск `pr19`
+
+```bash
+cd pr19/server
+npm install
+npm start
+```
+
+Адрес сервера: `http://localhost:3000`
+
+Для подключения PostgreSQL можно использовать `DATABASE_URL`.
+
+## Запуск `pr20`
+
+```bash
+cd pr20/server
+npm install
+npm start
+```
+
+Адрес сервера: `http://localhost:3000`
+
+Для подключения MongoDB можно использовать `MONGO_URL`.
